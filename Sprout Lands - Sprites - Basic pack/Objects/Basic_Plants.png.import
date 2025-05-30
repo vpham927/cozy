@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hqsu3a7f4hwq"
-path="res://.godot/imported/Basic_Plants.png-86917bb755b78305959ab51266f9cb24.ctex"
+path="res://.godot/imported/Basic_Plants.png-e5d7a7b7b3c24f690c7346ed54debcb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png"
-dest_files=["res://.godot/imported/Basic_Plants.png-86917bb755b78305959ab51266f9cb24.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/objects/Basic_Plants.png"
+dest_files=["res://.godot/imported/Basic_Plants.png-e5d7a7b7b3c24f690c7346ed54debcb3.ctex"]
 
 [params]
 

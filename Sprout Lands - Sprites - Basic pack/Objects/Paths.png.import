@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l5fwy1d58ldc"
-path="res://.godot/imported/Paths.png-128273fd0923ba1ac193c3fbc087ef07.ctex"
+path="res://.godot/imported/Paths.png-115939ab5f134f2ef11d86cbc5ea83c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprout Lands - Sprites - Basic pack/Objects/Paths.png"
-dest_files=["res://.godot/imported/Paths.png-128273fd0923ba1ac193c3fbc087ef07.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/objects/Paths.png"
+dest_files=["res://.godot/imported/Paths.png-115939ab5f134f2ef11d86cbc5ea83c3.ctex"]
 
 [params]
 

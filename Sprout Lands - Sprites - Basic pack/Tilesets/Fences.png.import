@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2c2ou8bs6rwl"
-path="res://.godot/imported/Fences.png-56759b1dede644b9211778dfdb3c424f.ctex"
+path="res://.godot/imported/Fences.png-e17e202ad543c53ff5a356fd5dd3a3d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png"
-dest_files=["res://.godot/imported/Fences.png-56759b1dede644b9211778dfdb3c424f.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/tilesets/Fences.png"
+dest_files=["res://.godot/imported/Fences.png-e17e202ad543c53ff5a356fd5dd3a3d2.ctex"]
 
 [params]
 

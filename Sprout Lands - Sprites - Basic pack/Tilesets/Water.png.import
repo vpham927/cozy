@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs35osekv74o5"
-path="res://.godot/imported/Water.png-566e2e475bca0c29f0c48908736299bd.ctex"
+path="res://.godot/imported/Water.png-e5038c8b6c53167fedda370d6bc8a1b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png"
-dest_files=["res://.godot/imported/Water.png-566e2e475bca0c29f0c48908736299bd.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/tilesets/Water.png"
+dest_files=["res://.godot/imported/Water.png-e5038c8b6c53167fedda370d6bc8a1b1.ctex"]
 
 [params]
 
