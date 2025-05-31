@@ -51,7 +51,7 @@ func _physics_process(delta: float) -> void:
 		current_node_state._on_physics_process(delta)
 		# Check for possible state transitions by calling the NodeState's transition check method
 		current_node_state._on_next_transitions()
-		print("Current State: ", current_node_state_name)
+		# print("Current State: ", current_node_state_name)
 
 
 # Function to handle state transitions, called when a NodeState emits its transition signal
@@ -80,4 +80,4 @@ func transition_to(node_state_name : String) -> void:
 	current_node_state = new_node_state
 	current_node_state_name = current_node_state.name.to_lower()
 	# Print debug information about the state change
-	print("Current State: ", current_node_state_name)
+	#print("Current State: ", current_node_state_name)

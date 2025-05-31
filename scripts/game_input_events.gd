@@ -24,3 +24,10 @@ static func is_movement_input() -> bool:
 		return false
 	else:
 		return true	
+
+
+#This function is used to check if the player is hitting
+
+static func use_tool() -> bool:
+	var use_tool_value : bool = Input.is_action_just_pressed("hit")
+	return use_tool_value
