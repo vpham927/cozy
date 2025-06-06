@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=4 uid="uid://c2lvtiibjjp1e"]
+[gd_scene load_steps=5 format=4 uid="uid://c2lvtiibjjp1e"]
 
 [ext_resource type="TileSet" uid="uid://rsj780xuyabc" path="res://Tilesets/game_tile_set.tres" id="1_ardmt"]
 [ext_resource type="PackedScene" uid="uid://cqg3s6oa3kmgk" path="res://scenes/characters/player/player.tscn" id="2_6nbhr"]
 [ext_resource type="PackedScene" uid="uid://r4tmyxvm26bl" path="res://scenes/characters/chicken/chicken.tscn" id="3_6nbhr"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_6nbhr"]
+vertices = PackedVector2Array(572.773, 279.656, 599.648, 354.008, 552.891, 410.289, 474.742, 399.008, 448.742, 312.656, 437.438, 244.859, 497.109, 232.602)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5, 6)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(499, 222, 581, 273, 611, 356, 557, 421, 467, 408, 439, 315, 426, 237)])
 
 [node name="TestSceneTilemapLayerYSort" type="Node2D"]
 y_sort_enabled = true
@@ -31,3 +36,9 @@ zoom = Vector2(3, 3)
 
 [node name="Chicken" parent="." instance=ExtResource("3_6nbhr")]
 position = Vector2(528, 377)
+
+[node name="Chickens" type="Node" parent="."]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens"]
+position = Vector2(1, 17)
+navigation_polygon = SubResource("NavigationPolygon_6nbhr")

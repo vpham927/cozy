@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://r4tmyxvm26bl"]
+[gd_scene load_steps=14 format=3 uid="uid://r4tmyxvm26bl"]
 
 [ext_resource type="Texture2D" uid="uid://bbuup4fxmkbb4" path="res://Sprout Lands - Sprites - Basic pack/characters/Free Chicken Sprites.png" id="1_be5x3"]
+[ext_resource type="Script" uid="uid://cweawpkuemrtm" path="res://scenes/characters/chicken/chicken.gd" id="1_r6a33"]
 [ext_resource type="Script" uid="uid://ddw6u8vup7mr6" path="res://scripts/state_machine/node_state_machine.gd" id="2_awcwn"]
 [ext_resource type="Script" uid="uid://c30hx78g43cf4" path="res://scenes/characters/chicken/idle_state.gd" id="3_31inw"]
 [ext_resource type="Script" uid="uid://dpge6al1as0y6" path="res://scenes/characters/chicken/walk_state.gd" id="4_31inw"]
@@ -64,6 +65,7 @@ animations = [{
 radius = 4.12311
 
 [node name="Chicken" type="CharacterBody2D"]
+script = ExtResource("1_r6a33")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
@@ -76,6 +78,11 @@ frame_progress = 0.19143
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_vmevo")
 
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true
+radius = 5.0
+debug_enabled = true
+
 [node name="StateMachine" type="Node2D" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_awcwn")
 initial_node_state = NodePath("Idle")
@@ -85,7 +92,8 @@ script = ExtResource("3_31inw")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
-[node name="Walk" type="Node2D" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d")]
+[node name="Walk" type="Node2D" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d", "navigation_agent_2d")]
 script = ExtResource("4_31inw")
 character = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+navigation_agent_2d = NodePath("../../NavigationAgent2D")

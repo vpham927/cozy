@@ -15,8 +15,11 @@ var current_node_state : NodeState
 # Stores the name of the current state for easy reference
 var current_node_state_name : String
 
+var parent_node_name: String
+
 # Called when the node is ready (initialized)
 func _ready() -> void:
+	parent_node_name = get_parent().name
 	# Loop through all child nodes of this state machine
 	for child in get_children():
 		# Check if the child is a NodeState instance
@@ -52,7 +55,7 @@ func _physics_process(delta: float) -> void:
 		current_node_state._on_physics_process(delta)
 		# Check for possible state transitions by calling the NodeState's transition check method
 		current_node_state._on_next_transitions()
-		print("Current State: ", current_node_state_name)
+		print(parent_node_name, "Current State: ", current_node_state_name)
 
 
 # Function to handle state transitions, called when a NodeState emits its transition signal

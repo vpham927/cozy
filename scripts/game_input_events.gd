@@ -2,6 +2,8 @@ class_name GameInputEvents
 
 static var direction: Vector2
 
+
+
 #This function needs a vector 2 to be returned, we defined the direction as a vector 2, so we return the same at the bottom
 static func movement_input() -> Vector2:
 	if Input.is_action_pressed("walk_left"):
