@@ -1,3 +1,6 @@
+#Always Attach this to the StateMachine Node2D
+
+
 # Defines a custom class called NodeStateMachine that can be used in other scripts
 class_name NodeStateMachine
 # Makes this class inherit from the Node class in Godot
